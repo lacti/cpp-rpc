@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Rpc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Example">
+      <UniqueIdentifier>{5b46713a-ba38-4888-8567-cfb40ff35526}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="buffer.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="handler.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="session.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="rpc.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="rpc_gen.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="rpc_gen_spec.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="example_rpc.h">
+      <Filter>Example</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp-rpc.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="rpc.cpp">
+      <Filter>Rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="session.cpp">
+      <Filter>Rpc</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
