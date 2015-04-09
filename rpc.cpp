@@ -31,13 +31,13 @@ void rpc_client_t::connect(const std::string& addr, unsigned short port) {
 int rpc_client_t::register_callback(general_callback_ptr callback) {
     int req_num = ++_req_num_gen;
 
-    std::unique_lock<std::mutex> lock;
+    std::unique_lock<std::mutex> lock(_callback_map_mutex);
     _callback_map.insert(std::make_pair(req_num, std::move(callback)));
     return req_num;
 }
 
 rpc_client_t::general_callback_ptr rpc_client_t::get_callback(int req_num) {
-    std::unique_lock<std::mutex> lock;
+    std::unique_lock<std::mutex> lock(_callback_map_mutex);
     auto it = _callback_map.find(req_num);
     if (it == _callback_map.end())
         return nullptr;
